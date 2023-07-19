@@ -6,15 +6,4 @@ Pasando diseños de páginas web de Dribbble a páginas funcionales con fines de
 
 |Nombre|Previsualización|Inicio|Fin|
 |:----:|:----:|:----:|:----:|
-|[Fintech Web](https://dribbble.com/shots/19597655-fintech-website-design-landing-web-page-home-page)|![GIF ](/ImagenesProyecto/fintech.gif) |18/07/2023|-|
-
-
-<style>
-  img {
-    width: 175px;
-    height: auto; 
-  }
-</style>
-
-
-
+|[Fintech Web](https://dribbble.com/shots/19597655-fintech-website-design-landing-web-page-home-page)|<img src = "ImagenesProyecto/fintech.gif" width = '25%'>|18/07/2023|-|
