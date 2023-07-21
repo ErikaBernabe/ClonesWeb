@@ -1,5 +1,144 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+
+
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    background-color: rgb(245,244,246);
+    font-family: 'Source Code Pro', monospace;
 }
+h1{ 
+    font-family: 'Playfair Display', serif;
+}
+/* h4, #logo{
+    font-family: 'Source Code Pro', monospace;
+} */
+.contenido{
+    /* background-color: rgb(245,244,246); */
+}
+
+#h1{
+    padding: 25px;
+}
+#h4{
+    padding: 0 0 10px 25px;
+}
+#btn{
+    color: #fff;
+    background-color: black;
+    padding: 10px 10px;
+    border-radius: 20px;
+    
+}
+#btndiv{
+    padding: 0 0 10px 25px;
+}
+
+
+/*#cajaMayor{
+    /*padding: 0 10px 10px 25px;*/
+    /* width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}*/
+.caja cards-1{
+    border-radius: 20px;
+    background-color: rgb(88,158,225);
+    padding: 0 0 10px 25px;
+    width:25% ;
+    height: 275px;
+}
+
+.caja cards-2{
+    border-radius: 20px;
+    background-color: rgb(122,88,255);
+    padding: 0 0 10px 25px;
+    width:25% ;
+    height: 275px;
+}
+
+.caja cards-3{
+    border-radius: 20px;
+    background-color: rgb(255,245,0);
+    padding: 0 0 10px 25px;
+    width:25% ;
+    height: 275px;
+}
+
+.caja cards-4{
+    border-radius: 20px;
+    background-color: rgb(178,233,190);
+    padding: 0 0 10px 25px;
+    width:25% ;
+    height: 275px;
+}
+
+.header {
+    margin: 0 5px;
+    padding: 15px 10px; 
+    border-bottom: 1.5px solid black;
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.header > div {
+    margin: 0 50px 0 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.secciones {
+    justify-content: center;
+}
+
+.logo {
+    justify-content: start;
+}
+
+.logo div {
+    right:0;
+}
+
+.sesion {
+    justify-content: end;
+}
+
+/*CARRUSEL*/
+/*.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+.wrapper .carousel{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.wrapper .card{
+    background: #e74c3c;
+    line-height: 250px;
+    text-align: center;
+    color: #fff;
+    font-size: 90px;
+    width: 300px;
+    font-weight: 600;
+    margin: 20px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,.2);
+    pointer-events: none;
+}*/
