@@ -12,31 +12,43 @@
 }
 h1{ 
     font-family: 'Playfair Display', serif;
+    padding: 25px;
+    font-size: 80px;
+    font-weight: lighter;
 }
 
 #h1{
-    padding: 25px;
+    width: 75%;
 }
+
 #h4{
     padding: 0 0 10px 25px;
+    width: 60%;
+    line-height: 30px;
+    letter-spacing: -1px;
 }
-#btn{
+
+#btn {
     color: #fff;
     background-color: black;
     padding: 10px 10px;
     border-radius: 20px;
-    
+    width: 120px;
+    border-style: none;
 }
+
 #btndiv{
-    padding: 0 0 10px 25px;
+    padding: 10px 25px;
 }
+
+/*encabezado*/
 .header {
     margin: 0 5px;
-    padding: 15px 10px; 
+    padding: 15px 15px 10px 15px; 
     border-bottom: 1.5px solid black;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: end;
 }
 
 a {
@@ -44,19 +56,32 @@ a {
     color: black;
 }
 
-.secciones div {
+.logo a > div {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.logo img {
+    padding-right: 5px;
+}
+
+.secciones div, .sesion div{
     display: inline-block;
     padding: 0px 20px;
+    font-size: 15px;
+    letter-spacing: -2px;
 }
 
-.logo > a div {
-    display:flex;
-    align-items: center;
-}
 
-.sesion div {
+/* .sesion div {
     display: inline-block;
-}
+    font-size: 15px;
+    letter-spacing: -2px;
+} */
 
 /*CARRUSEL*/
 .wrapper{
@@ -74,24 +99,26 @@ a {
 
 .wrapper .card{
     /*background: rgb(47, 47, 201);*/
-    line-height: 250px;
+    /*line-height: 250px;
     text-align: center;
-    /* color: #fff;*/
-    font-size: 90px;
-    width: 350px;
     font-weight: 600;
+    /* color: #fff;*/
+    /*font-size: 90px;*/
+    width: 325px;
+    height: 325px;
     margin: 20px 20px;
     border-radius: 75px;
-    box-shadow: 0 4px 8px rgba(0,0,0,.2);
-    pointer-events: none;
-}
+    /* box-shadow: 0 4px 8px rgba(12, 4, 87, 0.2);*/
+    /* pointer-events: none; */
 
-.wrapper .card{
     display: flex;
     justify-content: space-around;
     position: relative;
-    left: 185px;
+    left: 100px;
     animation: carousel 3s linear 0;
+
+    justify-content: center;
+    align-items: center;
 }
 .carousel .card .cards{
     overflow: hidden;
@@ -104,9 +131,11 @@ a {
 }
 .carousel .card.cards-3{
     background: rgb(255,245,0);
+    overflow: hidden;
 }
 .carousel .card.cards-4{
     background: rgb(178,233,190);
+    overflow: hidden;
 }
 
 @keyframes carousel {
@@ -153,5 +182,90 @@ label:hover{
     90%{
         left: 285px;
     }
+    }
+}
+
+/*FORMAS Y ANIMACION*/
+#caja1{
+    background-color: rgb(255,154,204);
+    border-radius: 50%;/*crea el circulo*/
+    height: 250px;
+    width: 250px;
+}
+#caja2{
+    background-color: rgb(205,255,1);
+    transform: rotate(45deg);/*crea el rombo*/
+    height: 200px;
+    width: 200px;
+    /* display: flex;
+    align-items: center;*/
+}
+#caja3{
+    background-color: rgb(224,132,255);
+    height: 250px;
+    width: 250px;
+    clip-path: polygon(50% 0%, 83% 17%, 100% 50%, 83% 83%, 50% 100%, 17% 83%, 0% 50%, 17% 17%); /* Crea la forma de octágono */
+    
+
+}
+#caja4{
+    background-color: rgb(255,110,92);
+    width: 250px;
+    height: 250px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%); /* Crea la forma de triángulo */
+}
+
+/*Parte de Animacion*/
+#caja1:hover{
+    animation: cambiar1 0.2s linear 0s 1 normal forwards  running;
+}
+@keyframes cambiar1{
+    from{
+        border-radius: 50%;/*crea el circulo*/
+        height: 250px;
+        width: 250px;
+    }
+    to{
+        border-radius: 75px;/*crea el circulo*/
+        height: 325px;
+        width: 325px;
+    }
+}
+
+#caja2:hover{
+    animation: cambiar2 0.2s linear 0s 1 normal forwards  running;
+}
+@keyframes cambiar2{
+    from{
+        transform: rotate(45deg);/*crea el rombo*/
+        height: 200px;
+        width: 200px;
+    }
+    to{
+        transform: rotate(0deg);
+        height: 325px;
+        width: 325px;
+        border-radius: 75px;
+    }
+}
+
+#caja3:hover{
+    animation: rotar 1s forwards;  
+}
+#caja4:hover{
+    animation: rotar 1s forwards;  
+}
+@keyframes rotar {
+    0% {
+    transform: scale(1) rotate(0deg);
+    
+    }
+    100% {
+    transform: scale(1) rotate(90deg) ;
+    clip-path: none ;
+    height: 325px;
+    width: 325px;
+    border-radius: 75px;
+    
     }
 }
