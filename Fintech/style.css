@@ -76,13 +76,6 @@ a {
     letter-spacing: -2px;
 }
 
-
-/* .sesion div {
-    display: inline-block;
-    font-size: 15px;
-    letter-spacing: -2px;
-} */
-
 /*CARRUSEL*/
 .wrapper{
     display: flex;
@@ -191,14 +184,21 @@ label:hover{
     border-radius: 50%;/*crea el circulo*/
     height: 250px;
     width: 250px;
+
+    color: transparent;
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
 }
 #caja2{
     background-color: rgb(205,255,1);
     transform: rotate(45deg);/*crea el rombo*/
     height: 200px;
     width: 200px;
-    /* display: flex;
-    align-items: center;*/
+
+    color: transparent;
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    
 }
 #caja3{
     background-color: rgb(224,132,255);
@@ -206,6 +206,9 @@ label:hover{
     width: 250px;
     clip-path: polygon(50% 0%, 83% 17%, 100% 50%, 83% 83%, 50% 100%, 17% 83%, 0% 50%, 17% 17%); /* Crea la forma de octágono */
     
+    color: transparent;
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
 
 }
 #caja4{
@@ -213,11 +216,22 @@ label:hover{
     width: 250px;
     height: 250px;
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%); /* Crea la forma de triángulo */
+
+    color: transparent;
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
 }
 
 /*Parte de Animacion*/
+
 #caja1:hover{
     animation: cambiar1 0.2s linear 0s 1 normal forwards  running;
+
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    text-align: center;
+    color: black;
 }
 @keyframes cambiar1{
     from{
@@ -234,6 +248,12 @@ label:hover{
 
 #caja2:hover{
     animation: cambiar2 0.2s linear 0s 1 normal forwards  running;
+
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    text-align: center;
+    color: black;
 }
 @keyframes cambiar2{
     from{
@@ -251,9 +271,21 @@ label:hover{
 
 #caja3:hover{
     animation: rotar 1s forwards;  
+
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    text-align: center;
+    color: black;
 }
 #caja4:hover{
     animation: rotar 1s forwards;  
+
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    text-align: center;
+    color: black;
 }
 @keyframes rotar {
     0% {
@@ -261,11 +293,27 @@ label:hover{
     
     }
     100% {
-    transform: scale(1) rotate(90deg) ;
+    transform: scale(1) rotate(360deg) ;
     clip-path: none ;
     height: 325px;
     width: 325px;
     border-radius: 75px;
     
     }
+}
+
+/*telefono*/
+.telefono-frame {
+    background: none;
+    border: 6px solid #c51f1f;
+    border-radius: 25px;
+    width: 124.5px;
+    height: 231.7px;
+}
+.telefono-screen {
+    background: none;
+    border: 3px solid #1d1d1b;
+    border-radius: 25px;
+    width: 124.5px;
+    height: 231.7px;
 }
